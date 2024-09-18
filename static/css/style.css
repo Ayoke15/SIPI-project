@@ -1,0 +1,155 @@
+/* Общий стиль для всех HTML страниц */
+body {
+    background-color: #5976D5;
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #5976D5;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #4158a5;
+    color: #e6e6e6;
+}
+
+/* Стили для ссылок */
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ade1ff;
+}
+
+/* Стили для форм */
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+/* Стили для списка */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    margin-bottom: 6px;
+    background-color: #4158a5;
+    border-radius: 4px;
+}
+
+/* Общие отступы и разделение секций */
+.section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.mb-3 {
+    display: flex;
+    gap: 20px;
+}
+
+/* Стиль для блока чата */
+div[style*="width:70%"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border: none;
+}
+
+/* Стиль для списка сообщений в чате */
+ul[style*="border:2px dashed black"] {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0;
+}
+
+/* Стиль для отдельного сообщения */
+div[style*="display:flex;"] {
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(89, 118, 213, 0.1);
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+/* Стиль для имени пользователя в сообщении */
+div[id="message-by-user"] {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Стиль для содержимого сообщения */
+div[id="message-content"] {
+    color: #FFFFFF;
+}
+
+/* Стиль для блока списка онлайн пользователей */
+div[style*="width:30%;"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    border: none;
+}
+
+/* Стиль для инпута нового сообщения */
+input[placeholder="new message..."] {
+    flex-grow: 1;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Стиль для кнопок в блоке нового сообщения и выхода из комнаты */
+button[style*="border:2px solid #ff4d4d;"],
+button[class*="custom-btn-css"] {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #5976D5;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button[style*="border:2px solid #ff4d4d;"]:hover {
+    background-color: #924aa9;
+    color: white;
+}
+
+button[class*="custom-btn-css"]:hover {
+    background-color: #4158a5;
+}
+
